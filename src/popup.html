@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Reader Settings</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 15px;
+      width: 280px;
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    .section {
+    width: 100%;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    #toggleWrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    #toggle {
+      transform: scale(1.2);
+    }
+
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background-color: white;
+      font-size: 14px;
+      color: #111827;
+      transition: border-color 0.2s ease;
+    }
+
+    select:hover {
+      border-color: #6366f1;
+    }
+
+    select:focus {
+      border-color: #4f46e5;
+      outline: none;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">🗣️ Text Reader Settings</div>
+
+  <div id="toggleWrapper">
+    <input type="checkbox" id="toggle" />
+    <label for="toggle">Enable Text Reader</label>
+  </div>
+
+  <div class="section">
+    <label for="voiceSelect">Select Voice</label>
+    <select id="voiceSelect"></select>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

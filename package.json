@@ -1,0 +1,14 @@
+
+{
+  "name": "text-reader-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.4.9"
+  }
+}
